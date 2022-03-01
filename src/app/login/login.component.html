@@ -1,1 +1,56 @@
-<p>login works!</p>
+<div
+  id="login-container"
+  class="flex flex-col container mx-auto items-center justify-center font-roboto bg-theme-primary w-screen h-screen"
+>
+  <div class="text-off-white flex flex-col items-center mt-20">
+    <h1 class="text-6xl font-semibold">Hecate</h1>
+    <h2 class="text-xl font-medium">Scooter and Kayak Booking Service</h2>
+  </div>
+  <div class="max-w-sm w-3/4 mt-14 text-off-white">
+    <form class="px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-1" for="email">
+          Email
+        </label>
+        <input
+          class="border border-theme-tertiary bg-theme-secondary rounded w-full py-2 px-3 text-off-white placeholder-off-white leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          type="email"
+        />
+      </div>
+      <div class="mb-6">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-1"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="border border-theme-tertiary bg-theme-secondary rounded w-full py-2 px-3 text-off-white placeholder-off-white leading-tight focus:outline-none focus:shadow-outline"
+          id="password"
+          type="password"
+        />
+      </div>
+      <div class="flex flex-col items-center justify-between">
+        <button
+          class="bg-theme-tertiary hover:bg-text-secondary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button"
+        >
+          Sign In
+        </button>
+      </div>
+      <div class="text-sm text-center mt-4">
+        <p>
+          Forgot password? Reset it
+          <a class="text-text-secondary" href="#"> here</a>.
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <footer class="bottom-4 absolute">
+    <p class="text-center text-off-white text-xs">
+      ©2022 Hecate Booking Service. All rights reserved.
+    </p>
+  </footer>
+</div>
