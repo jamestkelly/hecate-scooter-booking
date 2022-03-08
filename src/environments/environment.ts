@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDbQNGrKJKM1VWLQC98PrwT1ft80TC_a3E",
+    authDomain: "hecate-booking-service.firebaseapp.com",
+    projectId: "hecate-booking-service",
+    storageBucket: "hecate-booking-service.appspot.com",
+    messagingSenderId: "793966898204",
+    appId: "1:793966898204:web:b239ca922bab741d5403d9"
+  }
 };
 
 /*

@@ -1,0 +1,65 @@
+<div
+  id="login-container"
+  class="flex flex-col container mx-auto justify-center font-roboto bg-theme-primary w-screen h-screen"
+>
+  <div class="text-off-white flex flex-col items-center mt-4">
+    <div class="text-5xl font-medium flex flex-row items-center justify-center">
+      <h1>HECAT</h1>
+      <h1 class="text-text-secondary">E</h1>
+    </div>
+    <div class="max-w-sm w-full mt-1 text-off-white">
+      <form class="px-8 pt-2 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-1" for="email">
+            Email
+          </label>
+          <input
+            class="border border-theme-tertiary bg-theme-secondary rounded w-full py-2 px-3 text-off-white placeholder-off-white leading-tight focus:outline-none focus:shadow-outline"
+            id="email"
+            type="email"
+            #email
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-1"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="border border-theme-tertiary bg-theme-secondary rounded w-full py-2 px-3 text-off-white placeholder-off-white leading-tight focus:outline-none focus:shadow-outline"
+            id="password"
+            type="password"
+            #password
+            required
+          />
+        </div>
+        <div class="flex flex-row items-center justify-evenly w-full">
+          <button
+            class="w-full bg-theme-tertiary hover:bg-text-secondary text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+            (click)="authService.SignIn(email.value, password.value)"
+          >
+            LOGIN
+          </button>
+        </div>
+        <div class="text-sm text-center mt-4">
+          <p>
+            Forgot password? Reset it
+            <span class="text-text-secondary" routerLink="/forgot-password">
+              here</span
+            >.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <footer class="bottom-6 absolute">
+      <p class="text-center text-off-white text-sm">
+        Don't have an account? <span class="text-text-secondary" routerLink="/sign-up">Sign up here</span>.
+      </p>
+    </footer>
+  </div>
+</div>
