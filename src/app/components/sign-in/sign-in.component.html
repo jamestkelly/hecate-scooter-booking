@@ -48,7 +48,11 @@
         <div class="text-sm text-center mt-4">
           <p>
             Forgot password? Reset it
-            <span class="text-text-secondary" routerLink="/forgot-password">
+            <span
+              class="text-text-secondary cursor-pointer"
+              routerLink="/forgot-password"
+              routerLinkActive="active"
+            >
               here</span
             >.
           </p>
@@ -57,9 +61,16 @@
     </div>
 
     <footer class="bottom-6 absolute">
-      <p class="text-center text-off-white text-sm">
-        Don't have an account? <span class="text-text-secondary" routerLink="/sign-up">Sign up here</span>.
-      </p>
+      <div class="text-center text-off-white text-sm">
+        Don't have an account?
+        <a
+          class="text-text-secondary cursor-pointer"
+          routerLink="/sign-up"
+          routerLinkActive="active"
+        >
+          Sign up here </a
+        >.
+      </div>
     </footer>
   </div>
 </div>
